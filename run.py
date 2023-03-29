@@ -1,6 +1,10 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# Legend
+# X for placing ship and hit battleship
+# ' ' for empty space
+# '-' for missed shot
+
+from random import random
+
 
 HIDDEN_BOARD = [[' '] * 10 for x in range(10)]
 GUESS_BOARD = [[' '] * 10 for x in range(10)]
@@ -21,11 +25,18 @@ letters_to_numbers = {
 
 
 def print_board(board):
-    print('    A B C ')
+    print('     A B C D E F G H')
+    print('     ---------------')
+    row_number = 1
+    for row in board:
+        print("%d|%s|" % (row_number, "|".join(row)))
+        row_number += 1
 
 
-def create_ships():
-    pass
+def create_ships(board):
+    for ship in range(7):
+        ship_row, ship_column = randint(0,9), randint(0,9)
+        while board[ship_row]
 
 
 def get_ship_location():
