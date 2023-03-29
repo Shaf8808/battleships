@@ -19,8 +19,23 @@ letters_to_numbers = {
     'J': 9
 }
 
-def board():
+
+def print_board(board):
+    print('    A B C ')
+
+
+def create_ships():
     pass
 
+
 def get_ship_location():
-    
+    pass
+
+
+def count_hit_ships():
+    pass
+
+
+create_ships()
+turns = 10
+# while turns > 0:
