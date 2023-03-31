@@ -3,11 +3,11 @@
 # ' ' for empty space
 # '-' for missed shot
 
-from random import random
+from random import randint
 
 
-HIDDEN_BOARD = [[' '] * 10 for x in range(10)]
-GUESS_BOARD = [[' '] * 10 for x in range(10)]
+HIDDEN_BOARD = [[' '] * 9 for x in range(9)]
+GUESS_BOARD = [[' '] * 9 for x in range(9)]
 
 
 letters_to_numbers = {
@@ -19,14 +19,13 @@ letters_to_numbers = {
     'F': 5,
     'G': 6,
     'H': 7,
-    'I': 8,
-    'J': 9
+    'I': 8
 }
 
 
 def print_board(board):
-    print('     A B C D E F G H')
-    print('     ---------------')
+    print('  A B C D E F G H I')
+    print('  ------------------')
     row_number = 1
     for row in board:
         print("%d|%s|" % (row_number, "|".join(row)))
@@ -34,19 +33,36 @@ def print_board(board):
 
 
 def create_ships(board):
-    for ship in range(7):
-        ship_row, ship_column = randint(0,9), randint(0,9)
-        while board[ship_row]
+    for ship in range(5):
+        ship_row, ship_column = randint(0, 8), randint(0, 8)
+        while board[ship_row][ship_column] == 'X':
+            ship_row, ship_column = randint(0, 8), randint(0, 8)
+        board[ship_row][ship_column] = 'X'
 
 
 def get_ship_location():
-    pass
+    row = input('Please enter a ship row 1-9')
+    while row not in '123456789':
+        print('Please enter a valid row')
+        row = input('Please enter a ship row 1-9')
+    column = input('Please enter a ship column A-I').upper()
+    while column not in 'ABCDEFGHI':
+        print('Please enter a valid column')
+        column = input('Please enter a ship column A-I').upper()
+    return int(row) - 1, letters_to_numbers[column]
 
 
-def count_hit_ships():
-    pass
+def count_hit_ships(board):
+    count = 0
+    for row in board:
+        for column in row:
+            if column == 'X':
+                count += 1
+    return count
 
 
-create_ships()
+create_ships(HIDDEN_BOARD)
 turns = 10
+print_board(HIDDEN_BOARD)
+print_board(GUESS_BOARD)
 # while turns > 0:
