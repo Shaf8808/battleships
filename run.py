@@ -7,7 +7,7 @@ from random import randint
 
 
 HIDDEN_BOARD = [[' '] * 9 for x in range(9)]
-GUESS_BOARD = [[' '] * 9 for x in range(9)]
+PLAYER_BOARD = [[' '] * 9 for x in range(9)]
 
 
 letters_to_numbers = {
@@ -63,6 +63,20 @@ def count_hit_ships(board):
 
 create_ships(HIDDEN_BOARD)
 turns = 10
-print_board(HIDDEN_BOARD)
-print_board(GUESS_BOARD)
-# while turns > 0:
+while turns > 0:
+    print('Welcome to the best Battleship game in the WORLD!')
+    print_board(PLAYER_BOARD)
+    row, column = get_ship_location()
+    if PLAYER_BOARD[row][column] == '-':
+        print('Row and column already selected')
+    elif HIDDEN_BOARD[row][column] == 'X':
+        print('Successful hit!')
+        PLAYER_BOARD[row][column] = 'X'
+        turns -= 1
+    else:
+        print('Tough luck friend, you missed!')
+        PLAYER_BOARD[row][column] = '-'
+        turns -= 1
+    if count_hit_ships(PLAYER_BOARD) == 5:
+        print('Congratulations! You have sunk all of those pesky ships and have earned the title master of the seas!')
+        break
