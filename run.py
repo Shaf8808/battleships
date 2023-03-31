@@ -30,7 +30,7 @@ def print_board(board):
     for row in board:
         print("%d|%s|" % (row_number, "|".join(row)))
         row_number += 1
-
+        
 
 def create_ships(board):
     for ship in range(5):
