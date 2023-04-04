@@ -51,6 +51,11 @@ def create_ships(board):
 
 
 def get_ship_location():
+    """
+    Function for user input creating it's
+    parameters and displaying an error message
+    if the user enters an invalid key
+    """
     row = input('Please enter a ship row 1-9: ')
     while row not in "123456789":
         print('Please enter a valid row')
@@ -63,6 +68,10 @@ def get_ship_location():
 
 
 def count_hit_ships(board):
+    """
+    Checks if all of the ships have been
+    successfully hit by the user
+    """
     count = 0
     for row in board:
         for column in row:
@@ -73,6 +82,8 @@ def count_hit_ships(board):
 
 create_ships(HIDDEN_BOARD)
 turns = 10
+# Loop that runs until either the user runs out of turns
+# or if they successfully hit all ships
 while turns > 0:
     print('Welcome to Battleship. Choose wisely...')
     print_board(PLAYER_BOARD)
