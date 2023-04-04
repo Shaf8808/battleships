@@ -5,8 +5,9 @@
 
 from random import randint
 
-
+# Board for holding computer ship locations
 HIDDEN_BOARD = [[' '] * 9 for x in range(9)]
+# Board that the user sees and displays their hits and misses
 PLAYER_BOARD = [[' '] * 9 for y in range(9)]
 
 
@@ -24,6 +25,11 @@ letters_to_numbers = {
 
 
 def print_board(board):
+    """
+    The structure and layout of the board
+    which is presented to the user once they
+    begin the game
+    """
     print('  A B C D E F G H I')
     print('  -+-+-+-+-+-+-+-+-+')
     row_number = 1
@@ -33,6 +39,10 @@ def print_board(board):
         
 
 def create_ships(board):
+    """
+    Function for creating a maximum of
+    5 ships for the user to try and hit
+    """
     for ship in range(5):
         ship_row, ship_column = randint(0, 8), randint(0, 8)
         while board[ship_row][ship_column] == 'X':

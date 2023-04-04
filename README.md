@@ -38,7 +38,7 @@ During the testing phase of my project, I ran into some issues, such as:
 
 I managed to resolve this issue by constantly testing as I wrote each line of code, and printing each line after it was written onto the terminal
 
-* One big issue that had to be looked at was the number of boards that was going to be included in my game. I decided that it would be best to include two, one hidden, and the other 
+* One big issue that had to be looked at was the number of boards that was going to be included in my game. I decided that it would be best to include two, one hidden, and the other a player board that the user would see and interact with during the game.
 
 ## Validator Testing
 
@@ -47,7 +47,7 @@ PEP8
 
 ## Deployment
 
-This project was deployed using Code Institut'es mock terminal for Heroku.
+This project was deployed using Code Institute's mock terminal for Heroku.
 
 Steps for deployment:
 * Fork or clone this repository
