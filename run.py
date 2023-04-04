@@ -10,7 +10,8 @@ HIDDEN_BOARD = [[' '] * 9 for x in range(9)]
 # Board that the user sees and displays their hits and misses
 PLAYER_BOARD = [[' '] * 9 for y in range(9)]
 
-
+# Used during user input and displaying player board with the
+# correct rows and columns structured in order
 letters_to_numbers = {
     'A': 0,
     'B': 1,
@@ -82,7 +83,7 @@ def count_hit_ships(board):
 
 create_ships(HIDDEN_BOARD)
 turns = 10
-# Loop that runs until either the user runs out of turns
+# Loop that runs continuously until either the user runs out of turns
 # or if they successfully hit all ships
 while turns > 0:
     print('Welcome to Battleship. Choose wisely...')
