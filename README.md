@@ -42,7 +42,23 @@ I managed to resolve this issue by constantly testing as I wrote each line of co
 
 ## Validator Testing
 
-* PEP8
+PEP8
 - No errors were returned
+
+## Deployment
+
+This project was deployed using Code Institut'es mock terminal for Heroku.
+
+Steps for deployment:
+* Fork or clone this repository
+* Create a new Heroku app
+* Set the builbacks to Python and NodeJs in that order
+* Link the Heroku app to the repository
+* CLick Deploy
+
+## Credits
+
+* Code Institute for the deployment terminal
+* Garrett Broughten
 
 
