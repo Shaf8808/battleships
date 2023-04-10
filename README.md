@@ -20,14 +20,14 @@ The player has a total of 10 goes to try and sink all 5 of the hidden ships on t
 - Generates random ships on the "hidden" board with each attempt
 - Includes two boards named player board and hidden board, which stores the randomly allocated ships
 
-<img src= "./documentation-images/game-layout.jpg">
+<img src= "./documentation-images/game-layout.jpg" height=250rem>
 
 * Play against the computer
 * Accepts user input
 * Input validation and error-checking
 - The user is unable to enter an invalid row or column
 
-<img src= "./documentation-images/user-validation.jpg">
+<img src= "./documentation-images/user-validation.jpg" height=250rem>
 
 - Cannot enter the same coordinates twice
 
