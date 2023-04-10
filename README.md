@@ -33,6 +33,9 @@ The player has a total of 10 goes to try and sink all 5 of the hidden ships on t
 
 <img src= "./documentation-images/user-validation-two.jpg" height=450rem>
 
+- Game over
+
+<img src= "./documentation-images/game-over.jpg" height=250rem>
 
 ## Data Model
 
@@ -48,7 +51,7 @@ I managed to resolve this issue by constantly testing as I wrote each line of co
 
 * One big issue that had to be looked at was the number of boards that was going to be included in my game. I decided that it would be best to include two, one hidden, and the other a player board that the user would see and interact with during the game.
 
-* A big part of my project for making this particular game is user input validation. It was essential that my game responded appropriately to any form of input from the users' end. It was important, first and foremost, that my game had clear and precise instructions that the user could understand when told to enter a specific input. For example, when I need the user to enter a specific row or column, I clearly displayed the range which the user must keep within when entering their selection, such as 1-9. My code had to include an if statement that would take into consideration each of the scenario that the gam may be presented with based on the players' input. This was the most difficult part of the game, and I am proud that I managed to accomplish this in clear and concise code.
+* A big part of my project for making this particular game is user input validation. It was essential that my game responded appropriately to any form of input from the users' end. It was important, first and foremost, that my game had clear and precise instructions that the user could understand when told to enter a specific input. For example, when I need the user to enter a specific row or column, I clearly displayed the range which the user must keep within when entering their selection, such as 1-9. My code had to include an if statement that would take into consideration each of the scenario that the game may be presented with based on the players' input. This was the most difficult part of the game, and I am proud that I managed to accomplish this in clear and concise code.
 
 ## Validator Testing
 
@@ -62,7 +65,7 @@ This project was deployed using Code Institute's mock terminal for Heroku.
 Steps for deployment:
 * Fork or clone this repository
 * Create a new Heroku app
-* Set the builbacks to Python and NodeJs in that order
+* Set the buildbacks to Python and NodeJs in that order
 * Link the Heroku app to the repository
 * CLick Deploy
 
