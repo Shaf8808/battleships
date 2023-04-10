@@ -82,7 +82,7 @@ def count_hit_ships(board):
 
 
 create_ships(HIDDEN_BOARD)
-turns = 1
+turns = 10
 # Loop that runs continuously until either the user runs out of turns
 # or if they successfully hit all ships
 while turns > 0:
