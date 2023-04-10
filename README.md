@@ -31,6 +31,9 @@ The player has a total of 10 goes to try and sink all 5 of the hidden ships on t
 
 - Cannot enter the same coordinates twice
 
+<img src= "./documentation-images/user-validation-two.jpg" height=450rem>
+
+
 ## Data Model
 
 I have decided to use a constant board class using predominantly two boards. One board is the player board which the user sees as they play the game, while the other is a hidden board which only the computer sees and where all of the ships are located.
