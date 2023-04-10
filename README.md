@@ -26,6 +26,9 @@ The player has a total of 10 goes to try and sink all 5 of the hidden ships on t
 * Accepts user input
 * Input validation and error-checking
 - The user is unable to enter an invalid row or column
+
+<img src= "./documentation-images/user-validation.jpg">
+
 - Cannot enter the same coordinates twice
 
 ## Data Model
