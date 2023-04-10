@@ -86,7 +86,7 @@ turns = 10
 # Loop that runs continuously until either the user runs out of turns
 # or if they successfully hit all ships
 while turns > 0:
-    print('Welcome to Battleship. Choose wisely...')
+    print('Welcome to Battleship, where you have a total of ten turns to try and sink 5 hidden ships on the computers board. Good luck and choose wisely...')
     print_board(PLAYER_BOARD)
     row, column = get_ship_location()
     if PLAYER_BOARD[row][column] == '-':
