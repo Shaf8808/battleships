@@ -12,6 +12,18 @@ After both a valid row and column is entered by the user, a sign is displayed on
 
 The player has a total of 10 goes to try and sink all 5 of the hidden ships on the board. Once they run out of all 10, they are presented with a game over message and thr game ends. If the user successfully manages to guess the correct position of all 5 ships, however, then they are presented with an appropriate congratulatory message and told they have sunk all ships.
 
+## Table of Contents
+
+* [**Requirements**](#requirements)
+* [**Expectations**](#expectations)
+* [**Features**](#features)
+* [**Data Model**](#data-model)
+* [**Technologies Used**](#technologies-used)
+    + [Languages](#languages)
+* [**Testing**](#testing)
+* [**Deployment**](#deployment)
+* [**Credits**](#credits)
+
 ## Features
 
 ### Existing Features
