@@ -24,6 +24,25 @@ The player has a total of 10 goes to try and sink all 5 of the hidden ships on t
 * [**Deployment**](#deployment)
 * [**Credits**](#credits)
 
+## Requirements
+
+* Ensure the game is responsive to the user as they enter their input
+* The game should provide clear and easy to understand instructions on the rules and how to play
+* User input validation
+* A game over message once the user runs out of turns and fails to hit all the computer's ships
+* A game won message which congratulates the user if they manage to hit all ships successfully
+
+## Expectations
+
+* As a user, I expect the layout of the board game to be organised and easy to understand
+* I expect to be provided with clear instructions on how to play the game
+* I expect the game to work as intended
+* I expect the game to respond to my specific input correctly and appropriately
+* I expect to be informed if I have entered an invalid key
+* I expect to be informed if I have selected the same row and column as a previous attempt
+* I expect the attempt counter to decrease with each attempt
+* I expect both my misses and successful hits to be displayed on the board in a way that is easy to identify
+
 ## Features
 
 ### Existing Features
