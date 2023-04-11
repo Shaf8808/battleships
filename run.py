@@ -1,8 +1,3 @@
-# Legend
-# X for placing ship and hit battleship
-# ' ' for empty space
-# '-' for missed shot
-
 from random import randint
 
 # Board for holding computer ship locations
@@ -88,6 +83,7 @@ turns = 10
 # or if they successfully hit all ships
 while turns > 0:
     print('\nWelcome to Battleship, where you have a total of ten turns to try and sink 5 hidden ships on the computers board. Good luck and choose wisely...\n')
+    print("Legend: X for hit battleship \n        - for missed shot\n")
     print_board(PLAYER_BOARD)
     row, column = get_ship_location()
     if PLAYER_BOARD[row][column] == '-':
