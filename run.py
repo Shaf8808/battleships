@@ -53,15 +53,24 @@ def get_ship_location():
     parameters and displaying an error message
     if the user enters an invalid key
     """
-    row = input('Please enter a ship row 1-9: ')
-    while row not in "123456789":
-        print('Please enter a valid row')
-        row = input('Please enter a ship row 1-9: ')
-    column = input('Please enter a ship column A-I: ').upper()
-    while column not in 'ABCDEFGHI':
-        print('Please enter a valid column')
-        column = input('Please enter a ship column A-I: ').upper()
-    return int(row) - 1, letters_to_numbers[column]
+    while True:
+        try:
+            row = input('Please enter a ship row 1-9: ')
+            if row in "123456789":
+                row = int(row) - 1
+                break
+        except ValueError:
+                print('Please enter a valid number between 1-9: ')
+    while True:
+            try:
+                column = input('Please enter a ship column A-I: ').upper()
+                if column in 'ABCDEFGHI':
+                    column = letters_to_numbers[column]
+                    break
+            except KeyError:
+                    print('Please enter a valid column between A-I')
+    return row, column
+
 
 
 def count_hit_ships(board):
@@ -78,7 +87,7 @@ def count_hit_ships(board):
 
 
 create_ships(HIDDEN_BOARD)
-turns = 10
+turns = 15
 # Loop that runs continuously until either the user runs out of turns
 # or if they successfully hit all ships
 while turns > 0:
@@ -92,7 +101,7 @@ while turns > 0:
         print('Successful hit!')
         PLAYER_BOARD[row][column] = 'X'
     else:
-        print('Tough luck friend, you missed!')
+        print('\nTough luck friend, you missed!')
         PLAYER_BOARD[row][column] = '-'
         turns -= 1
     if count_hit_ships(PLAYER_BOARD) == 5:
@@ -102,5 +111,4 @@ while turns > 0:
     if turns == 0:
         print('Game Over!')
         break
-
 
