@@ -39,6 +39,7 @@ def print_board(board):
         row_number += 1
     print('  -+-+-+-+-+-+-+-+-+\n')
 
+
 def create_ships(board):
     """
     Function for creating a maximum of
@@ -106,3 +107,5 @@ while turns > 0:
     if turns == 0:
         print('Game Over!')
         break
+
+
