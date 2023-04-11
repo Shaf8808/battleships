@@ -91,7 +91,7 @@ turns = 15
 # or if they successfully hit all ships
 while turns > 0:
     print('\nWelcome to Battleship, where you have a total of 15 turns to try '
-          'and sink 30 hidden ships on the computers board. Upon a '
+          'and sink 40 hidden ships on the computers board. Upon a '
           'successful hit, your turn counter will not go down. '
           'Good luck and choose wisely...\n')
     print("Legend: X for hit battleship \n        - for missed shot\n")
