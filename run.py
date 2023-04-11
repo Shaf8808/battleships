@@ -40,7 +40,7 @@ def create_ships(board):
     Function for creating a maximum of
     5 ships for the user to try and hit
     """
-    for ship in range(5):
+    for ship in range(40):
         ship_row, ship_column = randint(0, 8), randint(0, 8)
         while board[ship_row][ship_column] == 'X':
             ship_row, ship_column = randint(0, 8), randint(0, 8)
@@ -91,7 +91,7 @@ turns = 15
 # or if they successfully hit all ships
 while turns > 0:
     print('\nWelcome to Battleship, where you have a total of 15 turns to try '
-          'and sink 5 hidden ships on the computers board. Upon a '
+          'and sink 30 hidden ships on the computers board. Upon a '
           'successful hit, your turn counter will not go down. '
           'Good luck and choose wisely...\n')
     print("Legend: X for hit battleship \n        - for missed shot\n")
