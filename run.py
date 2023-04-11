@@ -60,17 +60,16 @@ def get_ship_location():
                 row = int(row) - 1
                 break
         except ValueError:
-                print('Please enter a valid number between 1-9: ')
+            print('Please enter a valid number between 1-9: ')
     while True:
-            try:
-                column = input('Please enter a ship column A-I: ').upper()
-                if column in 'ABCDEFGHI':
-                    column = letters_to_numbers[column]
-                    break
-            except KeyError:
-                    print('Please enter a valid column between A-I')
+        try:
+            column = input('Please enter a ship column A-I: ').upper()
+            if column in 'ABCDEFGHI':
+                column = letters_to_numbers[column]
+                break
+        except KeyError:
+            print('Please enter a valid column between A-I')
     return row, column
-
 
 
 def count_hit_ships(board):
@@ -91,7 +90,10 @@ turns = 15
 # Loop that runs continuously until either the user runs out of turns
 # or if they successfully hit all ships
 while turns > 0:
-    print('\nWelcome to Battleship, where you have a total of ten turns to try and sink 5 hidden ships on the computers board. Good luck and choose wisely...\n')
+    print('\nWelcome to Battleship, where you have a total of 15 turns to try \
+          and sink 5 hidden ships on the computers board. Upon a \
+          successful hit, your turn counter will not go down. \
+          Good luck and choose wisely...\n')
     print("Legend: X for hit battleship \n        - for missed shot\n")
     print_board(PLAYER_BOARD)
     row, column = get_ship_location()
@@ -111,4 +113,3 @@ while turns > 0:
     if turns == 0:
         print('Game Over!')
         break
-
