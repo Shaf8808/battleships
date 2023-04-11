@@ -91,7 +91,6 @@ while turns > 0:
     elif HIDDEN_BOARD[row][column] == 'X':
         print('Successful hit!')
         PLAYER_BOARD[row][column] = 'X'
-        turns -= 1
     else:
         print('Tough luck friend, you missed!')
         PLAYER_BOARD[row][column] = '-'
