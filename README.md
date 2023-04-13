@@ -64,15 +64,15 @@ The player has a total of 12 goes to try and sink 10 out of 40 hidden ships on t
 
 - Cannot enter the same coordinates twice
 
-<img src= "./documentation-images/user-validation-two.jpg" height=450rem>
+<img src= "./documentation-images/user-validation-two.jpg" height=350rem>
 
 - Game over screen
 
-<img src= "./documentation-images/game-over.jpg" height=450rem>
+<img src= "./documentation-images/game-over.jpg" height=350rem>
 
 - Win game screen
 
-<img src= "./documentation-images/win-game.jpg" height=450rem width=900rem>
+<img src= "./documentation-images/win-game.jpg" height=350rem width=900rem>
 
 [Back to Top](#table-of-contents)
 
