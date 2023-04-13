@@ -109,7 +109,7 @@ while turns > 0:
         PLAYER_BOARD[row][column] = '-'
         turns -= 1
     if count_hit_ships(PLAYER_BOARD) == 10:
-        print('Congratulations! You have sunk all 10 of those pesky ships!')
+        print('Congratulations! You have sunk all 10 of those pesky ships!\n')
         break
     print(f'You have {str(turns)} turns remaining\n')
     if turns == 0:
