@@ -21,9 +21,9 @@ letters_to_numbers = {
 
 # Instructions for the game displayed at the start
 print('\nWelcome to Battleship, where you have a total of 15 turns to try '
-        'and sink 10 hidden ships on the computers board. Upon a '
-        'successful hit, your turn counter will not go down. '
-        'Good luck and choose wisely...\n')
+      'and sink 10 hidden ships on the computers board. Upon a '
+      'successful hit, your turn counter will not go down. '
+      'Good luck and choose wisely...\n')
 
 
 def print_board(board):
