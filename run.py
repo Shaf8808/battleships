@@ -20,7 +20,7 @@ letters_to_numbers = {
 }
 
 # Instructions for the game displayed at the start
-print('\nWelcome to Battleship, where you have a total of 15 turns to try '
+print('\nWelcome to Battleship, where you have a total of 12 turns to try '
       'and sink 10 hidden ships on the computers board. Upon a '
       'successful hit, your turn counter will not go down. '
       'Good luck and choose wisely...\n')
@@ -92,7 +92,7 @@ def count_hit_ships(board):
 
 
 create_ships(HIDDEN_BOARD)
-turns = 15
+turns = 12
 # Loop that runs continuously until either the user runs out of turns
 # or if they successfully hit all ten ships
 while turns > 0:

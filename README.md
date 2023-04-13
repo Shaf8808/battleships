@@ -10,7 +10,7 @@ Once a valid row is entered by the user, they are then instructed to enter a col
 
 After both a valid row and column is entered by the user, a sign is displayed on the board depending on whether or not their guess was correct. If the user managed to successfully "hit" a ship, they are told their guess was correct, and an "X" is displayed on the board which corresponds with the row and column selected by the user. If their guess was incorrect, however, then a "-" is shown on the board, and they are told they missed.
 
-The player has a total of 15 goes to try and sink 10 out of 40 hidden ships on the board. Once they run out of all 15, they are presented with a game over message and thr game ends. If the user successfully manages to guess the correct position of all 5 ships, however, then they are presented with an appropriate congratulatory message and told they have sunk all ships. Upon each successful hit that the user correctly guesses on the board, the turn counter does not decrease in order to reward the player and to make the game easier for the user to win.
+The player has a total of 12 goes to try and sink 10 out of 40 hidden ships on the board. Once they run out of all 12, they are presented with a game over message and thr game ends. If the user successfully manages to guess the correct position of all 10 ships, however, then they are presented with an appropriate congratulatory message and told they have sunk all ships. Upon each successful hit that the user correctly guesses on the board, the turn counter does not decrease in order to reward the player and to make the game easier for the user to win.
 
 ## Table of Contents
 
