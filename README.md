@@ -72,7 +72,7 @@ The player has a total of 12 goes to try and sink 10 out of 40 hidden ships on t
 
 - Win game screen
 
-<img src= "./documentation-images/win-game.jpg" height=350rem width=900rem>
+<img src= "./documentation-images/win-game.jpg" height=450rem>
 
 [Back to Top](#table-of-contents)
 
