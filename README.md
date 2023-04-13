@@ -66,7 +66,7 @@ The player has a total of 12 goes to try and sink 10 out of 40 hidden ships on t
 
 - Game over
 
-<img src= "./documentation-images/game-over.jpg" height=250rem>
+<img src= "./documentation-images/game-over.jpg" height=450rem>
 
 ## Data Model
 
