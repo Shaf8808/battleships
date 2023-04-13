@@ -21,7 +21,7 @@ letters_to_numbers = {
 
 # Instructions for the game displayed at the start
 print('\nWelcome to Battleship, where you have a total of 15 turns to try '
-        'and sink 40 hidden ships on the computers board. Upon a '
+        'and sink 10 hidden ships on the computers board. Upon a '
         'successful hit, your turn counter will not go down. '
         'Good luck and choose wisely...\n')
 
@@ -44,7 +44,7 @@ def print_board(board):
 def create_ships(board):
     """
     Function for creating a maximum of
-    5 ships for the user to try and hit
+    40 ships for the user to try and hit
     """
     for ship in range(40):
         ship_row, ship_column = randint(0, 8), randint(0, 8)
@@ -108,8 +108,8 @@ while turns > 0:
         print('\nTough luck friend, you missed!')
         PLAYER_BOARD[row][column] = '-'
         turns -= 1
-    if count_hit_ships(PLAYER_BOARD) == 5:
-        print('Congratulations! You have sunk all of those pesky ships!')
+    if count_hit_ships(PLAYER_BOARD) == 10:
+        print('Congratulations! You have sunk all 10 of those pesky ships!')
         break
     print(f'You have {str(turns)} turns remaining\n')
     if turns == 0:
