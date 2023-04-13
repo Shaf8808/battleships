@@ -61,7 +61,7 @@ def get_ship_location():
     """
     while True:
         try:
-            row = input('Please enter a ship row 1-9: \n')
+            row = input('Please enter a ship row 1-9: ')
             if row in "123456789":
                 row = int(row) - 1
                 break
