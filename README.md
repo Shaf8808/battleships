@@ -78,7 +78,7 @@ The player has a total of 12 goes to try and sink 10 out of 40 hidden ships on t
 
 ## Data Model
 
-I have decided to use a constant board class using predominantly two boards. One board is the player board which the user sees as they play the game, while the other is a hidden board which only the computer sees and where all of the ships are located.
+I have decided to use predominantly two boards for my game. One board is the player board which the user sees as they play the game, while the other is a hidden board which only the computer sees and where all of the ships are located.
 
 ## Technologies Used
 
