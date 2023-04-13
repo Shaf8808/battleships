@@ -104,7 +104,7 @@ I managed to resolve this issue by constantly testing as I wrote each line of co
 PEP8CI
 - No errors were returned
 
-<img src= "./documentation-images/ci-python-linter.jpg" height=450rem>
+<img src= "./documentation-images/ci-python-linter.jpg" height=350rem>
 
 ## Deployment
 
