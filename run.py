@@ -94,7 +94,7 @@ def count_hit_ships(board):
 create_ships(HIDDEN_BOARD)
 turns = 15
 # Loop that runs continuously until either the user runs out of turns
-# or if they successfully hit all ships
+# or if they successfully hit all ten ships
 while turns > 0:
     print("Legend: X for hit battleship \n        - for missed shot\n")
     print_board(PLAYER_BOARD)
@@ -113,5 +113,5 @@ while turns > 0:
         break
     print(f'You have {str(turns)} turns remaining\n')
     if turns == 0:
-        print('Game Over!')
+        print("Game Over! You'll get them next time...\n")
         break
