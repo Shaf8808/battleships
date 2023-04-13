@@ -112,6 +112,7 @@ Steps for deployment:
 ## Credits
 
 * Code Institute for the deployment terminal
-* Garrett Broughten
+* [Antonio Rodriguez](https://github.com/AkaAnto)
+* [Garrett Broughten](https://github.com/gbrough/battleship/blob/main/single_player.py)
 
 
