@@ -43,6 +43,8 @@ The player has a total of 12 goes to try and sink 10 out of 40 hidden ships on t
 * I expect the attempt counter to decrease with each attempt
 * I expect both my misses and successful hits to be displayed on the board in a way that is easy to identify
 
+[Back to Top](#table-of-contents)
+
 ## Features
 
 ### Existing Features
@@ -72,6 +74,8 @@ The player has a total of 12 goes to try and sink 10 out of 40 hidden ships on t
 
 <img src= "./documentation-images/win-game.jpg" height=450rem>
 
+[Back to Top](#table-of-contents)
+
 ## Data Model
 
 I have decided to use a constant board class using predominantly two boards. One board is the player board which the user sees as they play the game, while the other is a hidden board which only the computer sees and where all of the ships are located.
@@ -92,6 +96,8 @@ I managed to resolve this issue by constantly testing as I wrote each line of co
 * One big issue that had to be looked at was the number of boards that was going to be included in my game. I decided that it would be best to include two, one hidden, and the other a player board that the user would see and interact with during the game.
 
 * A big part of my project for making this particular game is user input validation. It was essential that my game responded appropriately to any form of input from the users' end. It was important, first and foremost, that my game had clear and precise instructions that the user could understand when told to enter a specific input. For example, when I need the user to enter a specific row or column, I clearly displayed the range which the user must keep within when entering their selection, such as 1-9. My code had to include an if statement that would take into consideration each of the scenario that the game may be presented with based on the players' input. This was the most difficult part of the game, and I am proud that I managed to accomplish this in clear and concise code.
+
+[Back to Top](#table-of-contents)
 
 ## Validator Testing
 
@@ -116,3 +122,4 @@ Steps for deployment:
 * [Garrett Broughten](https://github.com/gbrough/battleship/blob/main/single_player.py)
 
 
+[Back to Top](#table-of-contents)
