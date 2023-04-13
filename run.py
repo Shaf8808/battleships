@@ -1,3 +1,7 @@
+# Much of the code written in this file
+# was with the help of Garrett Broughten's
+# Battleship game
+
 from random import randint
 
 # Board for holding computer ship locations
