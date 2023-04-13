@@ -19,6 +19,12 @@ letters_to_numbers = {
     'I': 8
 }
 
+# Instructions for the game displayed at the start
+print('\nWelcome to Battleship, where you have a total of 15 turns to try '
+        'and sink 40 hidden ships on the computers board. Upon a '
+        'successful hit, your turn counter will not go down. '
+        'Good luck and choose wisely...\n')
+
 
 def print_board(board):
     """
@@ -90,17 +96,13 @@ turns = 15
 # Loop that runs continuously until either the user runs out of turns
 # or if they successfully hit all ships
 while turns > 0:
-    print('\nWelcome to Battleship, where you have a total of 15 turns to try '
-          'and sink 40 hidden ships on the computers board. Upon a '
-          'successful hit, your turn counter will not go down. '
-          'Good luck and choose wisely...\n')
     print("Legend: X for hit battleship \n        - for missed shot\n")
     print_board(PLAYER_BOARD)
     row, column = get_ship_location()
     if PLAYER_BOARD[row][column] == '-':
         print('Row and column already selected')
     elif HIDDEN_BOARD[row][column] == 'X':
-        print('Successful hit!')
+        print('\nSuccessful hit!')
         PLAYER_BOARD[row][column] = 'X'
     else:
         print('\nTough luck friend, you missed!')
@@ -109,7 +111,7 @@ while turns > 0:
     if count_hit_ships(PLAYER_BOARD) == 5:
         print('Congratulations! You have sunk all of those pesky ships!')
         break
-    print(f'You have {str(turns)} turns remaining')
+    print(f'You have {str(turns)} turns remaining\n')
     if turns == 0:
         print('Game Over!')
         break
