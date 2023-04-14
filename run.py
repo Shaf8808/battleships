@@ -104,9 +104,9 @@ while turns > 0:
     print_board(PLAYER_BOARD)
     row, column = get_ship_location()
     if PLAYER_BOARD[row][column] == '-':
-        print('Row and column already selected')
+        print('\nRow and column already selected')
     elif PLAYER_BOARD[row][column] == 'X':
-        print('Row and column already selected')
+        print('\nRow and column already selected')
     elif HIDDEN_BOARD[row][column] == 'X':
         print('\nSuccessful hit!')
         PLAYER_BOARD[row][column] = 'X'
