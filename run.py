@@ -48,7 +48,7 @@ def print_board(board):
 def create_ships(board):
     """
     Function for creating a maximum of
-    40 ships for the user to try and hit
+    40 random ships for the user to try and hit
     """
     for ship in range(40):
         ship_row, ship_column = randint(0, 8), randint(0, 8)
@@ -59,8 +59,8 @@ def create_ships(board):
 
 def get_ship_location():
     """
-    Function for user input creating it's
-    parameters and displaying an error message
+    Function for user input parameters
+    and displaying an error message
     if the user enters an invalid key
     """
     while True:
