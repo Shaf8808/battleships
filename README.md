@@ -99,7 +99,7 @@ I managed to resolve this issue by constantly testing as I wrote each line of co
 
 * WHen it came to user validation, I managed to account for the different types of user input fairly easily, except for one which was I was made aware of by my mentor. When the user pressed the enter key into my input field, my game would move on to the next input before recieving a traceback error in the terminal. This was something I needed to fix for my game, and had to spend time identifying which part of my code to specifically target in order to do so. 
 
-After a while, I realised that it was my get_ship_location function that seemed to be the problem. The method that I had implemented did not account for the user simply pressing the enter key. I resolved this by altering my code and using a try/except method to define the parameters of my user input 
+After a while, I realised that it was my get_ship_location function that seemed to be the problem. The method that I had implemented did not account for the user simply pressing the enter key. I resolved this by altering my code and using a try/except method to define the parameters of my user input and include a value error if a suitable number/letter was not entered by the player. This seemed to fix the issue of the user not entering anything before moving on to the next section of the game.
 
 [Back to Top](#table-of-contents)
 
