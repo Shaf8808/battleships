@@ -97,6 +97,10 @@ I managed to resolve this issue by constantly testing as I wrote each line of co
 
 * A big part of my project for making this particular game is user input validation. It was essential that my game responded appropriately to any form of input from the users' end. It was important, first and foremost, that my game had clear and precise instructions that the user could understand when told to enter a specific input. For example, when I need the user to enter a specific row or column, I clearly displayed the range which the user must keep within when entering their selection, such as 1-9. My code had to include an if statement that would take into consideration each of the scenario that the game may be presented with based on the players' input. This was the most difficult part of the game, and I am proud that I managed to accomplish this in clear and concise code.
 
+* WHen it came to user validation, I managed to account for the different types of user input fairly easily, except for one which was I was made aware of by my mentor. When the user pressed the enter key into my input field, my game would move on to the next input before recieving a traceback error in the terminal. This was something I needed to fix for my game, and had to spend time identifying which part of my code to specifically target in order to do so. 
+
+After a while, I realised that it was my get_ship_location function that seemed to be the problem. The method that I had implemented did not account for the user simply pressing the enter key. I resolved this by altering my code and using a try/except method to define the parameters of my user input 
+
 [Back to Top](#table-of-contents)
 
 ## Validator Testing
@@ -115,7 +119,7 @@ Steps for deployment:
 * Create a new Heroku app
 * Set the buildbacks to Python and NodeJs in that order
 * Link the Heroku app to the repository
-* CLick Deploy
+* Click Deploy
 
 ## Credits
 
